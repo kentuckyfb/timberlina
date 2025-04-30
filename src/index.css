@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 36 71% 69%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 25 100% 66%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 36 71% 69%;
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 36 71% 69%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 36 71% 69%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 36 71% 69%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-theme-dark text-theme-light font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#e6b980] hover:bg-[#eacda3] text-theme-dark font-medium py-2 px-6 rounded-md transition-colors duration-300 hover:shadow-lg flex items-center justify-center whitespace-nowrap;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-[#e6b980] text-[#e6b980] hover:bg-[#e6b980]/10 font-medium py-2 px-6 rounded-md transition-colors duration-300 flex items-center justify-center whitespace-nowrap;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .dark-texture {
+    @apply bg-theme-dark bg-grain bg-repeat;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .card-hover {
+    @apply hover:shadow-[0_0_20px_5px_rgba(230,185,128,0.3)] transition-shadow duration-300;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(230, 185, 128, 0.8);
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#e6b980] to-[#eacda3];
+  }
+
+  .card-dark {
+    @apply bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg overflow-hidden shadow-lg;
+  }
+  
+  /* Curve decorations */
+  .curve-decoration {
+    @apply absolute w-full overflow-hidden leading-0;
+  }
+  
+  .curve-decoration-top {
+    @apply top-0 left-0;
+  }
+  
+  .curve-decoration-bottom {
+    @apply bottom-0 left-0;
+  }
+  
+  /* Button with icon alignment */
+  .btn-icon {
+    @apply inline-flex items-center justify-center gap-2;
+  }
+}
+
+
+/* Section spacing with curve decorations */
+.section-with-curve-top {
+  position: relative;
+  padding-top: 80px; /* Space for the curve */
+}
+
+.section-with-curve-bottom {
+  position: relative;
+  padding-bottom: 80px; /* Space for the curve */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .section-with-curve-top {
+    padding-top: 60px;
+  }
+  
+  .section-with-curve-bottom {
+    padding-bottom: 60px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .section-with-curve-top {
+    padding-top: 40px;
+  }
+  
+  .section-with-curve-bottom {
+    padding-bottom: 40px;
+  }
+}
+
+/* Fix for the "You May Also Like" section */
+.related-products-section {
+  position: relative;
+  z-index: 10;
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .related-products-section {
+    padding-top: 60px;
+  }
+}
+
+/* Ensure content doesn't overlap with curve decorations */
+.curve-spacer {
+  height: 40px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .curve-spacer {
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curve-spacer {
+    height: 20px;
+  }
+}
