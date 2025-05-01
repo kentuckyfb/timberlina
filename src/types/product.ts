@@ -1,11 +1,11 @@
 // types/product.ts
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   shortDescription: string;
   description: string;
   image: string;
-  price?: number;
+  price?: string;
   category?: string;
   dimensions?: string;
   targetAudience?: string;

@@ -9,11 +9,7 @@ const StorySection: React.FC = () => {
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="animate-on-scroll">
-            <img 
-              src="/public/lovable-uploads/433a7fd4-bb91-45b7-b05b-8a104df655dc.png" 
-              alt="The Story of Timberlina" 
-              className="rounded-lg shadow-md"
-            />
+            
           </div>
           <div className="animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-wood-darkest font-playfair leading-tight">

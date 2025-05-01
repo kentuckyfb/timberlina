@@ -5,7 +5,7 @@ import CurveDecoration from '../ui/curve-decoration';
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const productId = parseInt(id || '0');
+  const productId = id || '0';
   const product = productsData.find(p => p.id === productId);
   
   // Error state if product not found
@@ -74,12 +74,27 @@ const ProductDetail = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Product Image */}
             <div>
-              <div className="border border-[#333] overflow-hidden">
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="w-full h-auto object-cover"
-                />
+              <div className="border border-[#333] overflow-hidden bg-[#1a1a1a] flex items-center justify-center p-4">
+                {!product.image ? (
+                  <div className="text-white text-lg font-medium">No preview available</div>
+                ) : (
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    style={{
+                      maxWidth: '90%',
+                      maxHeight: '90%',
+                      width: 'auto',
+                      height: 'auto',
+                      objectFit: 'contain'
+                    }}
+                    className="transition-transform duration-500"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.parentElement.innerHTML = '<div class="text-white text-lg font-medium">No preview available</div>';
+                    }}
+                  />
+                )}
               </div>
             </div>
 
@@ -169,7 +184,7 @@ const ProductDetail = () => {
         </div>
       </section>
       
-      {/* Related Products */}
+      {/* Related Products - FIXED "You May Also Like" SECTION */}
       <section className="py-16 bg-[#0a0a0a] relative">
         {/* Add top padding to prevent overlap with curve */}
         <div className="pt-8 md:pt-16"></div>
@@ -188,13 +203,30 @@ const ProductDetail = () => {
                 to={`/products/${relatedProduct.id}`}
                 className="bg-[#1a1a1a] overflow-hidden group"
               >
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={relatedProduct.image} 
-                    alt={relatedProduct.name} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                {/* Fixed image container with aspect ratio maintained */}
+                <div className="aspect-square bg-[#1a1a1a] flex items-center justify-center p-4">
+                  {!relatedProduct.image ? (
+                    <div className="text-white text-lg font-medium">No preview available</div>
+                  ) : (
+                    <img 
+                      src={relatedProduct.image} 
+                      alt={relatedProduct.name} 
+                      style={{
+                        maxWidth: '80%',
+                        maxHeight: '80%',
+                        width: 'auto',
+                        height: 'auto',
+                        objectFit: 'contain'
+                      }}
+                      className="transition-transform duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.parentElement.innerHTML = '<div class="text-white text-lg font-medium">No preview available</div>';
+                      }}
+                    />
+                  )}
                 </div>
+                
                 <div className="p-4 md:p-6 bg-[#0a0a0a]">
                   <h3 className="text-base md:text-lg font-medium text-[#e6b980] mb-2 truncate">{relatedProduct.name}</h3>
                   <div className="flex justify-between items-center">

@@ -62,23 +62,40 @@ const Products = () => {
           {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="bg-[#1a1a1a] overflow-hidden">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
+              <div key={product.id} className="bg-[#1a1a1a] overflow-hidden flex flex-col">
+                {/* Fixed image container with aspect-square maintained but better image display */}
+                <div className="aspect-square bg-[#1a1a1a] flex items-center justify-center p-4">
+                  {!product.image ? (
+                    <div className="text-white text-lg font-medium">No preview available</div>
+                  ) : (
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      style={{
+                        maxWidth: '80%',
+                        maxHeight: '80%',
+                        width: 'auto',
+                        height: 'auto',
+                        objectFit: 'contain'
+                      }}
+                      className="transition-transform duration-500 hover:scale-105"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.parentElement.innerHTML = '<div class="text-white text-lg font-medium">No preview available</div>';
+                      }}
+                    />
+                  )}
                 </div>
-                <div className="p-6 bg-[#0a0a0a]">
-                  <h3 className="text-lg font-semibold text-[#e6b980] mb-2">{product.name}</h3>
-                  <p className="text-white/70 text-sm mb-4">{product.shortDescription}</p>
-                  <div className="flex justify-between items-center">
-                    {product.price && (
-                      <span className="text-white font-medium">${product.price.toFixed(2)}</span>
-                    )}
-                    <Link to={`/products/${product.id}`}>
-                      <Button className="bg-[#e6b980] hover:bg-[#eacda3] text-[#121212] text-sm">
+                <div className="p-6 bg-[#0a0a0a] flex flex-col justify-between" style={{ height: "200px" }}>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#e6b980] mb-2 line-clamp-1">{product.name}</h3>
+                    <p className="text-white/70 text-sm line-clamp-3">
+                      {product.description}
+                    </p>
+                  </div>
+                  <div className="mt-6">
+                    <Link to={`/products/${product.id}`} className="w-full block">
+                      <Button className="bg-[#e6b980] hover:bg-[#eacda3] text-[#121212] text-sm w-full">
                         View Details
                       </Button>
                     </Link>
