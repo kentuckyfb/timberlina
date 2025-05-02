@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
-import { ShoppingCart } from 'lucide-react';
+import { Hammer, Ruler, Leaf, Settings } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import CurveDecoration from '../components/ui/curve-decoration';
 import { productsData, productCategories } from '../data/products';
@@ -107,80 +107,80 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Info Section */}
-      <section className="py-12 md:py-16 bg-[#0a0a0a]">
+      {/* Enhanced Product Information Section */}
+      <section className="py-16 md:py-24 bg-[#0a0a0a]">
         <CurveDecoration position="top" fillColor="#121212" height="md" />
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <span className="inline-block text-[#e6b980] text-sm font-medium tracking-wider mb-3">CUSTOM CREATIONS</span>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white font-poppins">Custom <span className="gradient-text">Dollhouses</span></h2>
-              <div className="prose prose-lg text-white/80 max-w-none">
-                <p className="text-sm md:text-base">
-                  Beyond our standard collection, Timberlina offers custom dollhouse creation services. 
-                  Whether you're looking for a specific style, size, or special features, our skilled craftsmen 
-                  can bring your vision to life.
-                </p>
-                <p className="text-sm md:text-base mt-4">
-                  Custom dollhouses make perfect gifts for special occasions or unique collector's items. 
-                  Contact us to discuss your specific requirements and let us create a one-of-a-kind miniature 
-                  masterpiece for you.
-                </p>
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white font-poppins">
+              <span className="gradient-text">Product Information</span>
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto mt-4 text-sm md:text-base">
+              What makes our dollhouses special? Here's everything you need to know about our craftsmanship and materials.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1 */}
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] p-6 rounded-lg border border-[#333] transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl hover:shadow-[#e6b980]/10">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-[#e6b980]/10 rounded-full flex items-center justify-center">
+                  <Hammer className="w-8 h-8 text-[#e6b980]" />
+                </div>
               </div>
-              
-              <div className="mt-6">
-                <Link to="/contact">
-                  <Button className="bg-[#e6b980] hover:bg-[#eacda3] text-[#121212] font-medium">
-                    <ShoppingCart className="mr-2 h-4 w-4" />
-                    Request Custom Dollhouse
-                  </Button>
-                </Link>
-              </div>
+              <h3 className="text-xl font-semibold text-center text-[#e6b980] mb-4">Craftsmanship</h3>
+              <p className="text-white/70 text-center text-sm">
+                Each dollhouse is meticulously hand-crafted using traditional techniques, ensuring exceptional quality and attention to detail.
+              </p>
             </div>
-            
-            <div>
-              <div className="bg-[#1a1a1a] p-4 md:p-6">
-                <h3 className="text-lg md:text-xl font-semibold mb-4 text-[#e6b980] font-poppins gradient-text">Product Information</h3>
-                <ul className="space-y-4 md:space-y-6">
-                  <li className="flex items-start">
-                    <span className="text-[#e6b980] mr-4 text-xl md:text-2xl">01</span>
-                    <div>
-                      <span className="font-medium text-white block text-base md:text-lg">Craftsmanship</span>
-                      <span className="text-white/70 mt-1 block text-sm">
-                        Each dollhouse is meticulously hand-crafted using traditional techniques, ensuring exceptional quality.
-                      </span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#e6b980] mr-4 text-xl md:text-2xl">02</span>
-                    <div>
-                      <span className="font-medium text-white block text-base md:text-lg">Materials</span>
-                      <span className="text-white/70 mt-1 block text-sm">
-                        Made from sustainable plantation timber with non-toxic, child-safe finishes.
-                      </span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#e6b980] mr-4 text-xl md:text-2xl">03</span>
-                    <div>
-                      <span className="font-medium text-white block text-base md:text-lg">Assembly</span>
-                      <span className="text-white/70 mt-1 block text-sm">
-                        Most dollhouses feature tool-free assembly with pre-constructed components.
-                      </span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#e6b980] mr-4 text-xl md:text-2xl">04</span>
-                    <div>
-                      <span className="font-medium text-white block text-base md:text-lg">Scalability</span>
-                      <span className="text-white/70 mt-1 block text-sm">
-                        Available in standard 1:12 scale, with select models in 1:24 scale.
-                      </span>
-                    </div>
-                  </li>
-                </ul>
+
+            {/* Card 2 */}
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] p-6 rounded-lg border border-[#333] transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl hover:shadow-[#e6b980]/10">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-[#e6b980]/10 rounded-full flex items-center justify-center">
+                  <Leaf className="w-8 h-8 text-[#e6b980]" />
+                </div>
               </div>
+              <h3 className="text-xl font-semibold text-center text-[#e6b980] mb-4">Materials</h3>
+              <p className="text-white/70 text-center text-sm">
+                Made from sustainable plantation timber with non-toxic, child-safe finishes that are environmentally friendly.
+              </p>
             </div>
+
+            {/* Card 3 */}
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] p-6 rounded-lg border border-[#333] transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl hover:shadow-[#e6b980]/10">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-[#e6b980]/10 rounded-full flex items-center justify-center">
+                  <Settings className="w-8 h-8 text-[#e6b980]" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-center text-[#e6b980] mb-4">Assembly</h3>
+              <p className="text-white/70 text-center text-sm">
+                Most dollhouses feature tool-free assembly with pre-constructed components for easy setup and enjoyment.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] p-6 rounded-lg border border-[#333] transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl hover:shadow-[#e6b980]/10">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-[#e6b980]/10 rounded-full flex items-center justify-center">
+                  <Ruler className="w-8 h-8 text-[#e6b980]" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-center text-[#e6b980] mb-4">Scalability</h3>
+              <p className="text-white/70 text-center text-sm">
+                Available in standard (1:12) and other specified scales to match your existing collection or preferences.
+              </p>
+            </div>
+          </div>
+          
+          {/* CTA Section */}
+          <div className="mt-12 text-center">
+            <Link to="/contact">
+              <Button className="bg-[#e6b980] hover:bg-[#eacda3] text-[#121212] px-8 py-6 text-base">
+                Get in Touch
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

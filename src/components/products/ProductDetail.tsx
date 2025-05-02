@@ -175,9 +175,6 @@ const ProductDetail = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
                 </Link>
-                <button className="border border-[#e6b980] text-[#e6b980] hover:bg-[#e6b980]/10 px-4 py-3 flex items-center text-sm md:text-base">
-                  Request Custom Modifications
-                </button>
               </div>
             </div>
           </div>

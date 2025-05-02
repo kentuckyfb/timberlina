@@ -2,26 +2,7 @@
 import { Product, ProductCategory } from '../types/product';
 
 export const productsData: Product[] = [
-  {
-    id: "C1",
-    name: "Snap n'Stack",
-    shortDescription: "Snap, Stack, Play. The Bamboo way!",
-    description: "is more than a toy—it's a creative toolkit that encourages spatial thinking, fine motor skills, and environmental awareness, all wrapped into a delightful DIY play experience. Build it, expand it, and play your way—again and again. Snap n Stack is a beautifully crafted, modular wooden playhouse designed to inspire creativity, imaginative play, and hands-on construction for children and families. Made entirely from sustainably sourced bamboo wood, this eco-friendly dollhouse combines natural aesthetics with smart engineering to provide an engaging and educational experience. Each piece features a clever interlocking system that allows easy, tool-free assembly. Panels, beams, and architectural elements fit together like a puzzle, ensuring a snug, sturdy structure that can be built and rebuilt in endless configurations. Starting with a spacious ground floor, the design supports stackable construction, enabling builders to add multiple floors or extensions over time. Whether you're creating a cozy cottage or a multi-story mini mansion, the system adapts to your imagination. Arched doorways, window cutouts, and climbable elements such as ladders and open balconies create a world of open-ended storytelling opportunities. Children can role-play, rearrange rooms, and invent new narratives every time they play.",
-    image: "",
-    price: "",
-    category: "Assembly",
-    dimensions: "TBA",
-    targetAudience: "5+",
-    material: "FSC Certified Bamboo",
-    packaging: "Flat packed in a beautiful bamboo Box",
-    features: [
-      "DIY Interlocking Design",
-      "Expandable Modular System",
-      "Pick-and-Double System",
-      "Creative and Imaginative Play",
-      "Eco-Friendly Craftsmanship"
-    ]
-  },
+
   {
     id: "A1",
     name: "The Victorian",
@@ -31,7 +12,7 @@ export const productsData: Product[] = [
     price: "",
     category: "Premium",
     dimensions: "1:12 scale model",
-    targetAudience: "Children, Adults, Collectors, Hobbyists",
+    targetAudience: "Adults, Collectors, Hobbyists",
     material: "FSC Certified Bamboo Wood",
     packaging: "Flat Packed in Corrugated Cardboard Box",
     features: [
@@ -41,14 +22,14 @@ export const productsData: Product[] = [
       "Functional windows and doors",
       "Hinged front panels and attic access",
       "Removeable roof",
-      "Collector favorite and hobbyist treasure"
+      "A Collector favorite and hobbyist's treasure"
     ]
   },
   {
     id: "A2",
     name: "Malji",
     shortDescription: "Open the Doors to Endless Imagination.",
-    description: "The Malji Double Door is one of our most beloved designs, appealing to both children and adults alike. Expertly crafted from beautiful plantation timber, its twin front panels gracefully swivel open to reveal four spacious rooms, while a removable roof offers access to a charming attic space–inviting endless opportunities for decoration and imaginative play. Designed with versatility in mind, the Malji can be completely disassembled, flat-packed for convenient storage or transport, and effortlessly reassembled with its intuitive panel system. Whether styled simply or richly adorned, it offers a delightful, lasting canvas for creativity at any age. designed for modern living.",
+    description: "The Malji Double Door is one of our most beloved designs, appealing to both children and adults alike. Expertly crafted from beautiful plantation timber, its twin front panels gracefully swivel open to reveal four spacious rooms, while a removable roof offers access to a charming attic space–inviting endless opportunities for decoration and imaginative play. Designed with versatility in mind, the Malji can be completely disassembled, flat-packed for convenient storage or transport, and effortlessly reassembled with its intuitive panel system. Whether styled simply or richly adorned, it offers a delightful, lasting canvas for creativity at any age and designed for modern living.",
     image: "/Images/malji.png",
     price: "",
     category: "Premium",
@@ -70,6 +51,27 @@ export const productsData: Product[] = [
     shortDescription: "Build Play Imagine.",
     description: "Inspired by classic log cabin design, Timberlina's assembly house kits blend traditional craftsmanship with hands-on creativity. Made from sustainably sourced timber, each set invites children to explore imaginative play through building and storytelling. The gender-neutral design allows for a variety of cottage-style configurations, encouraging fine motor skill development and open-ended creativity. With no nails or screws required, assembly is safe, simple, and engaging–ideal for children and adults alike. Each cabin features functional doors and windows, removable roof sections and wooden detailing that brings the miniature world to life. Packaged in a convenient box with step-by-step instructions, it's the perfect blend of play, learning, and timeless natural beauty.",
     image: "/Images/cabin.png",
+    price: "",
+    category: "Assembly",
+    targetAudience: "5+ to adults",
+    material: "FSC certified Bamboo",
+    packaging: "Comes packed in a beautiful wooden box",
+    features: [
+      "Log cabin-style assembly–no nails or screws",
+      "Made from FSC certified Bamboo",
+      "Functional doors, windows, and removable roof",
+      "Multiple build variations in each kit",
+      "Natural wood finish",
+      "Includes easy-to-follow instructions",
+      "Packaged in a sturdy, gift-ready box"
+    ]
+  },
+  {
+    id: "B2",
+    name: "The Cottage",
+    shortDescription: "Build Play Imagine.",
+    description: "Inspired by classic log cabin design, Timberlina's assembly house kits blend traditional craftsmanship with hands-on creativity. Made from sustainably sourced timber, each set invites children to explore imaginative play through building and storytelling. The gender-neutral design allows for a variety of cottage-style configurations, encouraging fine motor skill development and open-ended creativity. With no nails or screws required, assembly is safe, simple, and engaging–ideal for children and adults alike. Each cottage features functional doors and windows, removable roof sections and wooden detailing that brings the miniature world to life. Packaged in a convenient box with step-by-step instructions, it's the perfect blend of play, learning, and timeless natural beauty.",
+    image: "/Images/cottage.png",
     price: "",
     category: "Assembly",
     targetAudience: "5+ to adults",
@@ -132,33 +134,32 @@ export const productsData: Product[] = [
     ]
   },
   {
-    id: "B2",
-    name: "The Cottage",
-    shortDescription: "Build Play Imagine.",
-    description: "Inspired by classic log cabin design, Timberlina's assembly house kits blend traditional craftsmanship with hands-on creativity. Made from sustainably sourced timber, each set invites children to explore imaginative play through building and storytelling. The gender-neutral design allows for a variety of cottage-style configurations, encouraging fine motor skill development and open-ended creativity. With no nails or screws required, assembly is safe, simple, and engaging–ideal for children and adults alike. Each cottage features functional doors and windows, removable roof sections and wooden detailing that brings the miniature world to life. Packaged in a convenient box with step-by-step instructions, it's the perfect blend of play, learning, and timeless natural beauty.",
-    image: "/Images/cottage.png",
+    id: "C1",
+    name: "Snap n'Stack",
+    shortDescription: "Snap, Stack, Play. The Bamboo way!",
+    description: "is more than a toy—it's a creative toolkit that encourages spatial thinking, fine motor skills, and environmental awareness, all wrapped into a delightful DIY play experience. Build it, expand it, and play your way—again and again. Snap n Stack is a beautifully crafted, modular wooden playhouse designed to inspire creativity, imaginative play, and hands-on construction for children and families. Made entirely from sustainably sourced bamboo wood, this eco-friendly dollhouse combines natural aesthetics with smart engineering to provide an engaging and educational experience. Each piece features a clever interlocking system that allows easy, tool-free assembly. Panels, beams, and architectural elements fit together like a puzzle, ensuring a snug, sturdy structure that can be built and rebuilt in endless configurations. Starting with a spacious ground floor, the design supports stackable construction, enabling builders to add multiple floors or extensions over time. Whether you're creating a cozy cottage or a multi-story mini mansion, the system adapts to your imagination. Arched doorways, window cutouts, and climbable elements such as ladders and open balconies create a world of open-ended storytelling opportunities. Children can role-play, rearrange rooms, and invent new narratives every time they play.",
+    image: "",
     price: "",
     category: "Assembly",
-    targetAudience: "5+ to adults",
-    material: "FSC certified Bamboo",
-    packaging: "Comes packed in a beautiful wooden box",
+    dimensions: "TBA",
+    targetAudience: "5+",
+    material: "FSC Certified Bamboo",
+    packaging: "Flat packed in a beautiful bamboo Box",
     features: [
-      "Log cabin-style assembly–no nails or screws",
-      "Made from FSC certified Bamboo",
-      "Functional doors, windows, and removable roof",
-      "Multiple build variations in each kit",
-      "Natural wood finish",
-      "Includes easy-to-follow instructions",
-      "Packaged in a sturdy, gift-ready box"
+      "DIY Interlocking Design",
+      "Expandable Modular System",
+      "Pick-and-Double System",
+      "Creative and Imaginative Play",
+      "Eco-Friendly Craftsmanship"
     ]
-  }
+  }, 
+  
 ];
 
 // Categories for filtering
 export const productCategories: ProductCategory[] = [
   { id: 'all', name: 'All Products' },
   { id: 'Premium', name: 'Premium Collection' },
-  { id: 'Classic', name: 'Classic Designs' },
   { id: 'Assembly', name: 'Assembly Houses' },
   { id: 'Portable', name: 'Portable Designs' }
 ];
