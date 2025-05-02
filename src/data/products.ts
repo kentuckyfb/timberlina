@@ -1,6 +1,13 @@
 // src/data/products.ts
 import { Product, ProductCategory } from '../types/product';
 
+// Import images directly (this is the most reliable method with Vite)
+import victorianDollhouse from '../assets/images/victorian-dollhouse.png';
+import malji from '../assets/images/malji.png';
+import cabin from '../assets/images/cabin.png';
+import lodge from '../assets/images/lodge.png';
+import cottage from '../assets/images/cottage.png';
+
 export const productsData: Product[] = [
   {
     id: "C1",
@@ -27,7 +34,7 @@ export const productsData: Product[] = [
     name: "The Victorian",
     shortDescription: "Step Into History. Stay for the Charm or A timeless gift, a creative project, and a family keepsake–this is more than a dollhouse. It's a piece of your story.",
     description: "Step into a world of timeless charm with Timberlina's 1:12 scale Victorian Dollhouse - a true celebration of craftsmanship and design. Expertly handcrafted by skilled artisans using the finest sustainably sourced timber, each house is individually made and presented in a refined natural wood finish—perfect for those who wish to preserve its organic beauty or explore creative decoration. Its elegant design features seamlessly openable doors and windows, while hinged front and roof panels offer effortless access to the rooms on every level, including the attic. A favorite among collectors and hobbyists, this dollhouse is both a timeless display piece and a delightful project for personalisation. It makes a perfect keepsake or unique gift for miniature enthusiasts and collectors.",
-    image: "/public/images/victorian-dollhouse.png",
+    image: victorianDollhouse, // Using the imported image
     price: "",
     category: "Premium",
     dimensions: "1:12 scale model",
@@ -49,7 +56,7 @@ export const productsData: Product[] = [
     name: "Malji",
     shortDescription: "Open the Doors to Endless Imagination.",
     description: "The Malji Double Door is one of our most beloved designs, appealing to both children and adults alike. Expertly crafted from beautiful plantation timber, its twin front panels gracefully swivel open to reveal four spacious rooms, while a removable roof offers access to a charming attic space–inviting endless opportunities for decoration and imaginative play. Designed with versatility in mind, the Malji can be completely disassembled, flat-packed for convenient storage or transport, and effortlessly reassembled with its intuitive panel system. Whether styled simply or richly adorned, it offers a delightful, lasting canvas for creativity at any age. designed for modern living.",
-    image: "/public/images/malji.png",
+    image: malji, // Using the imported image
     price: "",
     category: "Premium",
     targetAudience: "4+",
@@ -69,7 +76,7 @@ export const productsData: Product[] = [
     name: "The Cabin",
     shortDescription: "Build Play Imagine.",
     description: "Inspired by classic log cabin design, Timberlina's assembly house kits blend traditional craftsmanship with hands-on creativity. Made from sustainably sourced timber, each set invites children to explore imaginative play through building and storytelling. The gender-neutral design allows for a variety of cottage-style configurations, encouraging fine motor skill development and open-ended creativity. With no nails or screws required, assembly is safe, simple, and engaging–ideal for children and adults alike. Each cabin features functional doors and windows, removable roof sections and wooden detailing that brings the miniature world to life. Packaged in a convenient box with step-by-step instructions, it's the perfect blend of play, learning, and timeless natural beauty.",
-    image: "/public/images/cabin.png",
+    image: cabin, // Using the imported image
     price: "",
     category: "Assembly",
     targetAudience: "5+ to adults",
@@ -91,7 +98,7 @@ export const productsData: Product[] = [
     name: "The Lodge",
     shortDescription: "Build Play Imagine.",
     description: "Inspired by classic log cabin design, Timberlina's assembly house kits blend traditional craftsmanship with hands-on creativity. Made from sustainably sourced timber, each set invites children to explore imaginative play through building and storytelling. The gender-neutral design allows for a variety of cottage-style configurations, encouraging fine motor skill development and open-ended creativity. With no nails or screws required, assembly is safe, simple, and engaging–ideal for children and adults alike. Each lodge features functional doors and windows, removable roof sections and wooden detailing that brings the miniature world to life. Packaged in a convenient box with step-by-step instructions, it's the perfect blend of play, learning, and timeless natural beauty.",
-    image: "/public/images/lodge.png",
+    image: lodge, // Using the imported image
     price: "",
     category: "Assembly",
     targetAudience: "5+ to adults",
@@ -136,7 +143,7 @@ export const productsData: Product[] = [
     name: "The Cottage",
     shortDescription: "Build Play Imagine.",
     description: "Inspired by classic log cabin design, Timberlina's assembly house kits blend traditional craftsmanship with hands-on creativity. Made from sustainably sourced timber, each set invites children to explore imaginative play through building and storytelling. The gender-neutral design allows for a variety of cottage-style configurations, encouraging fine motor skill development and open-ended creativity. With no nails or screws required, assembly is safe, simple, and engaging–ideal for children and adults alike. Each cottage features functional doors and windows, removable roof sections and wooden detailing that brings the miniature world to life. Packaged in a convenient box with step-by-step instructions, it's the perfect blend of play, learning, and timeless natural beauty.",
-    image: "/public/images/cottage.png",
+    image: cottage, // Using the imported image
     price: "",
     category: "Assembly",
     targetAudience: "5+ to adults",

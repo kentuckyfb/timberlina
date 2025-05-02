@@ -1,12 +1,12 @@
-// types/product.ts
+// src/types/product.ts
 export interface Product {
   id: string;
   name: string;
   shortDescription: string;
   description: string;
-  image: string;
-  price?: string;
-  category?: string;
+  image: string | any; // Update type to accept both string and imported image
+  price: string;
+  category: string;
   dimensions?: string;
   targetAudience?: string;
   material?: string;
