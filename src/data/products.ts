@@ -123,7 +123,7 @@ export const productsData: Product[] = [
   },
   {
     id: "C2",
-    name: "Tim n'Trot",
+    name: "Play away House",
     shortDescription: "Play Anywhere. Imagine everywhere.",
     description: "The Carry n Go House is the perfect portable dollhouse for little dreamers on the move. Thoughtfully designed with lightweight, durable wood and working parts, it opens up into a charming miniature home–ready for creative play anytime, anywhere. With its easy-carry handle and compact slide in design, it's ideal for travel, storage, or spontaneous storytelling adventures. Personalise it, decorate it, and take the magic of home with you–wherever you go.",
     image: "",
