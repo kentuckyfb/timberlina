@@ -230,15 +230,7 @@ const About = () => {
           </div>
           
           {/* Call to Action */}
-          <div className="mt-12 text-center">
-            <h3 className="text-xl font-bold mb-4 text-white font-poppins">Get <span className="gradient-text">Inspired</span></h3>
-            <p className="text-white/80 max-w-2xl mx-auto mb-6">
-              Whether you're a collector, a creative builder, or shopping for a meaningful gift, Timberlina offers a timeless experience in miniature living. Explore our collection today.
-            </p>
-            <a href="/products" className="inline-block px-6 py-3 bg-[#e6b980] text-[#0a0a0a] font-medium rounded-md hover:bg-[#d4a76c] transition duration-300">
-              View Our Collection
-            </a>
-          </div>
+          
         </div>
       </section>
     </MainLayout>
