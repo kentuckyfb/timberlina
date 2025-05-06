@@ -200,32 +200,13 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white text-base mb-1">Email</h3>
-                      <a href="mailto:info@timberlina.com" className="text-[#e6b980] hover:text-[#eacda3] transition-colors text-sm">kushiiam23@gmail.com</a>
+                      <a href="mailto:info@timberlina.com" className="text-[#e6b980] hover:text-[#eacda3] transition-colors text-sm">timberlina@timberconcepts.lk</a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="bg-[#e6b980]/10 p-2 rounded-md mr-4">
-                      <Phone className="w-5 h-5 text-[#e6b980]" />
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-white text-base mb-1">Phone</h3>
-                      <a href="tel:+15551234567" className="text-white/80 hover:text-white transition-colors text-sm">+94 77 660 0877</a>
-                    </div>
-                  </div>
                   
-                  <div className="flex items-start">
-                    <div className="bg-[#e6b980]/10 p-2 rounded-md mr-4">
-                      <MapPin className="w-5 h-5 text-[#e6b980]" />
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-white text-base mb-1">Address</h3>
-                      <address className="not-italic text-white/80 text-sm">
-                        <p>Timberlina Dollhouses</p>
-                        <p>Mirigama, Sri Lanka</p>
-                      </address>
-                    </div>
-                  </div>
+                  
+                  
                 </div>
               </div>
               

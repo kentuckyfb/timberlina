@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -6,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -15,18 +14,19 @@ const Header: React.FC = () => {
         setIsScrolled(false);
       }
     };
-
+    
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  
   return (
     <header className={`fixed w-full top-0 z-50 transition-all duration-500 backdrop-blur-sm ${isScrolled ? 'bg-theme-dark/90 shadow-lg shadow-accent-teal/10 py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="font-playfair text-2xl md:text-3xl font-semibold text-accent-teal gradient-text hover:text-glow transition-all">
-          Timberlina
+          <span>Timberlina</span>
+          <span className="block text-xs md:text-sm font-normal text-theme-light/80 mt-1">by Timber Concepts Pvt Ltd</span>
         </Link>
         
         {/* Mobile menu button */}

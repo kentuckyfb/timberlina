@@ -10,7 +10,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand Column */}
           <div className="animate-fade-in">
-            <h3 className="text-2xl mb-6 font-playfair text-accent-teal gradient-text">Timberlina</h3>
+            <div className="mb-6">
+              <h3 className="text-2xl font-playfair text-accent-teal gradient-text">Timberlina</h3>
+              <p className="text-sm text-theme-light/80 mt-1">by Timber Concepts Pvt Ltd</p>
+            </div>
             <p className="text-theme-light/80 mb-6">
               Handcrafted dollhouses built with love and meticulous attention to detail, 
               creating miniature worlds that inspire generations.
@@ -87,7 +90,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="border-t border-[#222] mt-12 pt-8 text-center text-theme-light/60">
-          <p>&copy; {currentYear} Timberlina Dollhouses. All rights reserved.</p>
+          <p>&copy; {currentYear} Timberlina by Timber Concepts Pvt Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

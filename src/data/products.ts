@@ -2,19 +2,18 @@
 import { Product, ProductCategory } from '../types/product';
 
 export const productsData: Product[] = [
-
   {
     id: "A1",
     name: "The Victorian",
     shortDescription: "Step Into History. Stay for the Charm or A timeless gift, a creative project, and a family keepsake–this is more than a dollhouse. It's a piece of your story.",
-    description: "Step into a world of timeless charm with Timberlina's 1:12 scale Victorian Dollhouse - a true celebration of craftsmanship and design. Expertly handcrafted by skilled artisans using the finest sustainably sourced timber, each house is individually made and presented in a refined natural wood finish—perfect for those who wish to preserve its organic beauty or explore creative decoration. Its elegant design features seamlessly openable doors and windows, while hinged front and roof panels offer effortless access to the rooms on every level, including the attic. A favorite among collectors and hobbyists, this dollhouse is both a timeless display piece and a delightful project for personalisation. It makes a perfect keepsake or unique gift for miniature enthusiasts and collectors.",
+    description: "Step into a world of timeless charm with Timberlina's Victorian Dollhouse - a true celebration of craftsmanship and design. Expertly handcrafted by skilled artisans using the finest sustainably sourced timber, each house is individually made and presented in a refined natural wood finish - perfect for those who wish to preserve its organic beauty or explore creative decoration. Its elegant design features seamlessly openable doors and windows, while hinged front and roof panels offer effortless access to the rooms on every level, including the attic. A favorite among collectors and hobbyists, this dollhouse is both a timeless display piece and a delightful project for personalisation. It makes a perfect keepsake or unique gift for miniature enthusiasts and collectors.",
     image: "/Images/victorian-dollhouse.png",
     price: "",
     category: "Premium",
-    dimensions: "1:12 scale model",
-    targetAudience: "Adults, Collectors, Hobbyists",
+    dimensions: "Base - 32\" x 15.5\" Height - 33\"",
+    targetAudience: "Teens, Adults, Collectors, Hobbyists",
     material: "FSC Certified Bamboo Wood",
-    packaging: "Flat Packed in Corrugated Cardboard Box",
+    packaging: "Partially knocked down to components with detailed instructions for quick and easy assembly",
     features: [
       "Scale: 1:12",
       "Handcrafted from premium, sustainable timber",
@@ -22,22 +21,22 @@ export const productsData: Product[] = [
       "Functional windows and doors",
       "Hinged front panels and attic access",
       "Removeable roof",
-      "A Collector favorite and hobbyist's treasure"
+      "A Collector's favorite and hobbyist's treasure"
     ]
   },
   {
     id: "A2",
     name: "Malji",
     shortDescription: "Open the Doors to Endless Imagination.",
-    description: "The Malji Double Door is one of our most beloved designs, appealing to both children and adults alike. Expertly crafted from beautiful plantation timber, its twin front panels gracefully swivel open to reveal four spacious rooms, while a removable roof offers access to a charming attic space–inviting endless opportunities for decoration and imaginative play. Designed with versatility in mind, the Malji can be completely disassembled, flat-packed for convenient storage or transport, and effortlessly reassembled with its intuitive panel system. Whether styled simply or richly adorned, it offers a delightful, lasting canvas for creativity at any age and designed for modern living.",
+    description: "The Malji Double Door is one of our most beloved designs, appealing to both children and adults alike. Expertly crafted from beautiful plantation timber, its twin front panels gracefully swivel open to reveal four spacious rooms, while a removable roof offers access to a charming attic space - inviting endless opportunities for decoration and imaginative play. Designed with versatility in mind, the Malji can be completely disassembled, flat-packed for convenient storage or transport, and effortlessly reassembled with its intuitive panel system. Whether styled simply or richly adorned, it offers a delightful, lasting canvas for creativity at any age and designed for modern living.",
     image: "/Images/malji.png",
     price: "",
     category: "Premium",
-    targetAudience: "4+",
+    dimensions: "Base: 26\" x 16\" Height: 35\"",
+    targetAudience: "Children 4+ - Adults",
     material: "FSC Certified Bamboo Wood",
-    packaging: "Flat Packed in a corrugated cardboard box",
+    packaging: "Flat Packed with detailed instructions for quick and easy assembly",
     features: [
-      "1:12 scale",
       "Sustainably sourced bamboo wood",
       "Smooth-opening double doors and removable roof",
       "Four spacious rooms and accessible attic",
@@ -49,24 +48,22 @@ export const productsData: Product[] = [
     id: "B1",
     name: "The Cabin",
     shortDescription: "Build Play Imagine.",
-    description: "STEM Meets Style in these Unique Bamboo assembly house Kits. These modular, eco-friendly houses sparks creativity and builds real-world STEM skills like planning, problem-solving, and design—all through imaginative play. Whether building solo or with family, the Assembly Houses turn playtime into a hands-on experience with modern educational value.",
+    description: "STEM Meets Style in these Unique Bamboo assembly house Kits. These modular, eco-friendly houses sparks creativity and builds real-world STEM skills like planning, problem-solving, and design—all through imaginative play. Whether building solo or with family, the Assembly Houses encourages a hands-on experience with modern educational value.",
     image: "/Images/cabin.png",
     price: "",
     category: "Assembly",
+    dimensions: "Base 7\"x7\" Height 8\"",
     targetAudience: "6+",
-    material: "FSC certified Bamboo",
-    packaging: "Comes packed in a beautiful wooden box",
+    material: "FSC Certified Bamboo",
+    packaging: "Flat Packed with detailed instructions for quick and easy assembly",
     features: [
       "Encourages screen-free learning through construction",
       "Supports STEAM initiatives: science, tech, engineering, art, and math",
-      "Develops spatial awareness and early engineering concepts",
-      "Easy to assemble—no tools or frustration required",
+      "Develops spatial awareness",
+      "Easy to assemble",
       "Made from sustainable bamboo wood",
-      "Modular & Expandable Design: Children can mix, match, and build their own rooms, floors, and outdoor features",
       "Reusable, durable, and classroom-friendly",
-      "Perfect for ages 6+",
-      "Appeals to both boys and girls",
-      "Modular system invites repeat purchases (extensions, room sets, etc.)",
+      "Gender neutral",
       "Perfect for STEM toy sections, museum shops, and educational institutions"
     ]
   },
@@ -78,24 +75,22 @@ export const productsData: Product[] = [
     image: "/Images/cottage.png",
     price: "",
     category: "Assembly",
+    dimensions: "Base -15\" x12\" Height 9\"",
     targetAudience: "6+",
-    material: "FSC certified Bamboo",
-    packaging: "Comes packed in a beautiful wooden box",
+    material: "FSC Certified Bamboo",
+    packaging: "Flat Packed with detailed instructions for quick and easy assembly",
     features: [
       "Encourages screen-free learning through construction",
       "Supports STEAM initiatives: science, tech, engineering, art, and math",
-      "Develops spatial awareness and early engineering concepts",
-      "Easy to assemble—no tools or frustration required",
+      "Develops spatial awareness",
+      "Easy to assemble",
       "Made from sustainable bamboo wood",
-      "Modular & Expandable Design: Children can mix, match, and build their own rooms, floors, and outdoor features",
+      "Modular & Expandable Design",
       "Reusable, durable, and classroom-friendly",
-      "Perfect for ages 6+",
-      "Appeals to both boys and girls",
-      "Modular system invites repeat purchases (extensions, room sets, etc.)",
+      "Gender neutral",
       "Perfect for STEM toy sections, museum shops, and educational institutions"
     ]
   },
-
   {
     id: "B3",
     name: "The Lodge",
@@ -104,74 +99,22 @@ export const productsData: Product[] = [
     image: "/Images/lodge.png",
     price: "",
     category: "Assembly",
-    targetAudience: "6+",
-    material: "FSC certified Bamboo",
-    packaging: "Comes packed in a beautiful wooden box",
-    features: [
-      "Encourages screen-free learning through construction",
-      "Supports STEAM initiatives: science, tech, engineering, art, and math",
-      "Develops spatial awareness and early engineering concepts",
-      "Easy to assemble—no tools or frustration required",
-      "Made from sustainable bamboo wood",
-      "Modular & Expandable Design: Children can mix, match, and build their own rooms, floors, and outdoor features",
-      "Reusable, durable, and classroom-friendly",
-      "Perfect for ages 6+",
-      "Appeals to both boys and girls",
-      "Modular system invites repeat purchases (extensions, room sets, etc.)",
-      "Perfect for STEM toy sections, museum shops, and educational institutions"
-    ]
-  },
-  {
-    id: "C2",
-    name: "Play away House",
-    shortDescription: "Play Anywhere. Imagine everywhere.",
-    description: "The Carry n Go House is the perfect portable dollhouse for little dreamers on the move. Thoughtfully designed with lightweight, durable wood and working parts, it opens up into a charming miniature home–ready for creative play anytime, anywhere. With its easy-carry handle and compact slide in design, it's ideal for travel, storage, or spontaneous storytelling adventures. Personalise it, decorate it, and take the magic of home with you–wherever you go.",
-    image: "",
-    price: "",
-    category: "Portable",
-    dimensions: "",
-    targetAudience: "4+",
-    material: "Sustainably Sourced Bamboo",
-    packaging: "",
-    features: [
-      "Portable Design – Folds up easily with a sturdy carry handle for on-the-go play",
-      "Handcrafted Wood – Made from sustainably sourced, high-quality timber",
-      "Working Parts – Includes functional doors and windows for realistic play",
-      "Customisable Finish – Natural wood surface",
-      "Tool-Free Assembly – Snaps or slides into place with ease",
-      "Compact & Lightweight – Easy to store, carry, and set up anywhere",
-      "Inspires Imagination – Encourages open-ended, screen-free creative play",
-      "Compatible Scale – Fits 1:12 scale furniture and accessories",
-      "Made to Last – Durable construction for years of play and display"
-    ]
-  },
-  {
-    id: "C1",
-    name: "Snap n'Stack",
-    shortDescription: "Snap, Stack, Play. The Bamboo way!",
-    description: "STEM Meets Style in these Unique Bamboo assembly house Kits. These modular, eco-friendly houses sparks creativity and builds real-world STEM skills like planning, problem-solving, and design—all through imaginative play. Whether building solo or with family, the Assembly Houses turn playtime into a hands-on experience with modern educational value.",
-    image: "",
-    price: "",
-    category: "Assembly",
-    dimensions: "TBA",
+    dimensions: "Base - 15\"x16\" Height - 13.5\"",
     targetAudience: "6+",
     material: "FSC Certified Bamboo",
-    packaging: "Flat packed in a beautiful bamboo Box",
+    packaging: "Flat Packed with detailed instructions for quick and easy assembly",
     features: [
       "Encourages screen-free learning through construction",
       "Supports STEAM initiatives: science, tech, engineering, art, and math",
-      "Develops spatial awareness and early engineering concepts",
-      "Easy to assemble—no tools or frustration required",
+      "Develops spatial awareness",
+      "Easy to assemble",
       "Made from sustainable bamboo wood",
-      "Modular & Expandable Design: Children can mix, match, and build their own rooms, floors, and outdoor features",
+      "Modular & Expandable Design",
       "Reusable, durable, and classroom-friendly",
-      "Perfect for ages 6+",
-      "Appeals to both boys and girls",
-      "Modular system invites repeat purchases (extensions, room sets, etc.)",
+      "Gender neutral",
       "Perfect for STEM toy sections, museum shops, and educational institutions"
     ]
-  }, 
-  
+  }
 ];
 
 // Categories for filtering
@@ -179,5 +122,5 @@ export const productCategories: ProductCategory[] = [
   { id: 'all', name: 'All Products' },
   { id: 'Premium', name: 'Premium Collection' },
   { id: 'Assembly', name: 'Assembly Houses' },
-  { id: 'Portable', name: 'Portable Designs' }
+  // { id: 'Portable', name: 'Portable Designs' }
 ];
